@@ -1,0 +1,16 @@
+app: invesalius-3.1
+binpatch: true
+
+ingredients:
+  dist: xenial
+  sources:
+    - deb http://us.archive.ubuntu.com/ubuntu/ xenial main universe
+  packages:
+    - invesalius
+    - invesalius-examples
+    - invesalius-bin
+
+script:
+  - cp ./usr/share/applications/invesalius.desktop invesalius-3.1.desktop
+  - cp ./usr/share/pixmaps/invesalius.xpm invesalius.xpm
+  - cp ../../scripts/invesalius ./usr/bin/invesalius3
