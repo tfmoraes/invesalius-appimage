@@ -1,4 +1,4 @@
-app: invesalius-3.1
+app: invesalius
 binpatch: true
 
 ingredients:
