@@ -1,4 +1,4 @@
 #!/bin/bash
 
-export STATIC_FILES="$(pwd)"
-./Recipe InVesalius.yml
+export ARCH=x86_64
+bash -ex ./pkg2appimage InVesalius.yml
