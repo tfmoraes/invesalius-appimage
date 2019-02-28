@@ -9,10 +9,11 @@ ingredients:
     - tfmoraes/invesalius3.1-ppa
   packages:
     - invesalius
-    - invesalius-examples
     - invesalius-bin
 
 script:
   - cp ./usr/share/applications/invesalius.desktop invesalius-3.1.desktop
   - cp ./usr/share/pixmaps/invesalius.xpm invesalius.xpm
   - cp ../../scripts/invesalius ./usr/bin/invesalius3
+  - mkdir -p ./usr/share/metainfo/
+  - cp ../../invesalius.appdata.xml ./usr/share/metainfo/invesalius.appdata.xml
