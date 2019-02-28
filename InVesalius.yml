@@ -5,6 +5,8 @@ ingredients:
   dist: xenial
   sources:
     - deb http://us.archive.ubuntu.com/ubuntu/ xenial main universe
+  ppas:
+    - tfmoraes/invesalius3.1-ppa
   packages:
     - invesalius
     - invesalius-examples
