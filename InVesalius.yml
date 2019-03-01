@@ -12,7 +12,7 @@ ingredients:
     - invesalius-bin
 
 script:
-  - cp ./usr/share/pixmaps/invesalius.xpm invesalius.xpm
+  - cp ../../invesalius.png invesalius.png
   - cp ../../scripts/invesalius ./usr/bin/invesalius3
   - mkdir -p ./usr/share/metainfo/
   - cp ../../br.gov.cti.invesalius.appdata.xml ./usr/share/metainfo/
